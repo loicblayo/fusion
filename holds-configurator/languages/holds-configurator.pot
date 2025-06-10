@@ -1,0 +1,120 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Holds Configurator 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-01 00:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: holds-configurator.php:11
+msgid "No direct access"
+msgstr ""
+
+#: templates/configurator.php:3
+msgid "Bibliothèque de formes :"
+msgstr ""
+
+#: templates/configurator.php:5
+msgid "— Choisir une forme prédéfinie —"
+msgstr ""
+
+#: templates/configurator.php:6
+msgid "Boule / Macro sphère"
+msgstr ""
+
+#: templates/configurator.php:7
+msgid "Sloper (plat bombé)"
+msgstr ""
+
+#: templates/configurator.php:8
+msgid "Edge (règle)"
+msgstr ""
+
+#: templates/configurator.php:9
+msgid "Crimp (arête fine)"
+msgstr ""
+
+#: templates/configurator.php:10
+msgid "Pinch (pince)"
+msgstr ""
+
+#: templates/configurator.php:11
+msgid "Jug (bac)"
+msgstr ""
+
+#: templates/configurator.php:12
+msgid "Mini-jug"
+msgstr ""
+
+#: templates/configurator.php:13
+msgid "Pocket (trou)"
+msgstr ""
+
+#: templates/configurator.php:14
+msgid "Blob (galet mutant)"
+msgstr ""
+
+#: templates/configurator.php:15
+msgid "Hoof (sabot)"
+msgstr ""
+
+#: templates/configurator.php:20
+msgid "Forme :"
+msgstr ""
+
+#: templates/configurator.php:22
+msgid "Cube"
+msgstr ""
+
+#: templates/configurator.php:23
+msgid "Sphère"
+msgstr ""
+
+#: templates/configurator.php:24
+msgid "Cylindre"
+msgstr ""
+
+#: templates/configurator.php:25
+msgid "Cône"
+msgstr ""
+
+#: templates/configurator.php:26
+msgid "Pyramide"
+msgstr ""
+
+#: templates/configurator.php:27
+msgid "Prisme triangulaire"
+msgstr ""
+
+#: templates/configurator.php:28
+msgid "Galet"
+msgstr ""
+
+#: templates/configurator.php:33
+msgid "Mode trou / pocket"
+msgstr ""
+
+#: templates/configurator.php:34
+msgid "Mode libre"
+msgstr ""
+
+#: templates/configurator.php:35
+msgid "(Glisser un sommet rouge)"
+msgstr ""
+
+#: templates/configurator.php:38
+msgid "Rugosité :"
+msgstr ""
+
+#: templates/configurator.php:41
+msgid "Aplatir la base"
+msgstr ""
+
+#: templates/configurator.php:44
+msgid "Exporter STL"
+msgstr ""
+
+#: templates/configurator.php:47
+msgid "Astuce : Utilise la bibliothèque, règle les paramètres, active la rugosité ou mode libre, puis clique sur “Aplatir la base” si besoin."
+msgstr ""
