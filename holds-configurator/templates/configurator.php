@@ -1,47 +1,49 @@
 <div id="holds-canvas-container">
     <div style="margin-bottom:10px;">
-        <label for="preset">Bibliothèque de formes :</label>
+        <label for="preset"><?php _e('Bibliothèque de formes :', 'holds-configurator'); ?></label>
         <select id="preset">
-            <option value="">— Choisir une forme prédéfinie —</option>
-            <option value="ball">Boule / Macro sphère</option>
-            <option value="sloper">Sloper (plat bombé)</option>
-            <option value="edge">Edge (règle)</option>
-            <option value="crimp">Crimp (arête fine)</option>
-            <option value="pinch">Pinch (pince)</option>
-            <option value="jug">Jug (bac)</option>
-            <option value="miniJug">Mini-jug</option>
-            <option value="pocket">Pocket (trou)</option>
-            <option value="blob">Blob (galet mutant)</option>
-            <option value="hoof">Hoof (sabot)</option>
+            <option value=""><?php _e('— Choisir une forme prédéfinie —', 'holds-configurator'); ?></option>
+            <option value="ball"><?php _e('Boule / Macro sphère', 'holds-configurator'); ?></option>
+            <option value="sloper"><?php _e('Sloper (plat bombé)', 'holds-configurator'); ?></option>
+            <option value="edge"><?php _e('Edge (règle)', 'holds-configurator'); ?></option>
+            <option value="crimp"><?php _e('Crimp (arête fine)', 'holds-configurator'); ?></option>
+            <option value="pinch"><?php _e('Pinch (pince)', 'holds-configurator'); ?></option>
+            <option value="jug"><?php _e('Jug (bac)', 'holds-configurator'); ?></option>
+            <option value="miniJug"><?php _e('Mini-jug', 'holds-configurator'); ?></option>
+            <option value="pocket"><?php _e('Pocket (trou)', 'holds-configurator'); ?></option>
+            <option value="blob"><?php _e('Blob (galet mutant)', 'holds-configurator'); ?></option>
+            <option value="hoof"><?php _e('Hoof (sabot)', 'holds-configurator'); ?></option>
         </select>
     </div>
     <canvas id="holds-canvas" style="width: 100%; height: 400px; display: block; background: #fff"></canvas>
     <div style="margin-top:16px;">
-        <label for="shape">Forme :</label>
+        <label for="shape"><?php _e('Forme :', 'holds-configurator'); ?></label>
         <select id="shape">
-            <option value="cube">Cube</option>
-            <option value="sphere">Sphère</option>
-            <option value="cylinder">Cylindre</option>
-            <option value="cone">Cône</option>
-            <option value="pyramid">Pyramide</option>
-            <option value="prism">Prisme triangulaire</option>
-            <option value="galet">Galet</option>
+            <option value="cube"><?php _e('Cube', 'holds-configurator'); ?></option>
+            <option value="sphere"><?php _e('Sphère', 'holds-configurator'); ?></option>
+            <option value="cylinder"><?php _e('Cylindre', 'holds-configurator'); ?></option>
+            <option value="cone"><?php _e('Cône', 'holds-configurator'); ?></option>
+            <option value="pyramid"><?php _e('Pyramide', 'holds-configurator'); ?></option>
+            <option value="prism"><?php _e('Prisme triangulaire', 'holds-configurator'); ?></option>
+            <option value="galet"><?php _e('Galet', 'holds-configurator'); ?></option>
         </select>
         <span id="param-controls"></span>
     </div>
     <div style="margin-top:8px;">
-        <label style="display:inline-block;"><input type="checkbox" id="pocket" style="vertical-align:middle;"> Mode trou / pocket</label>
-        <button id="mode-libre-btn" type="button" style="margin-left:12px;">Mode libre</button>
-        <span id="mode-libre-label" style="font-size:0.9em;color:#2194ce;display:none;">(Glisser un sommet rouge)</span>
+        <label style="display:inline-block;"><input type="checkbox" id="pocket" style="vertical-align:middle;"> <?php _e('Mode trou / pocket', 'holds-configurator'); ?></label>
+        <button id="mode-libre-btn" type="button" style="margin-left:12px;"><?php _e('Mode libre', 'holds-configurator'); ?></button>
+        <span id="mode-libre-label" style="font-size:0.9em;color:#2194ce;display:none;"><?php _e('(Glisser un sommet rouge)', 'holds-configurator'); ?></span>
     </div>
     <div style="margin-top:12px;">
-        <label for="rugosite">Rugosité :</label>
+        <label for="rugosite"><?php _e('Rugosité :', 'holds-configurator'); ?></label>
         <input type="range" id="rugosite" min="0" max="2" value="0" step="0.01" style="width:150px;">
         <span id="rugosite-value">0</span>
-        <button id="flatten-btn" type="button" style="margin-left:18px;">Aplatir la base</button>
+        <button id="flatten-btn" type="button" style="margin-left:18px;"><?php _e('Aplatir la base', 'holds-configurator'); ?></button>
     </div>
     <div style="margin-top:18px;">
-        <button id="export-btn">Exporter STL</button>
+        <button id="export-btn"><?php _e('Exporter STL', 'holds-configurator'); ?></button>
     </div>
-    <p style="margin-top:10px;font-size:0.92em;color:#888;">Astuce : Utilise la bibliothèque, règle les paramètres, active la rugosité ou mode libre, puis clique sur “Aplatir la base” si besoin.</p>
+    <p style="margin-top:10px;font-size:0.92em;color:#888;">
+        <?php _e('Astuce : Utilise la bibliothèque, règle les paramètres, active la rugosité ou mode libre, puis clique sur “Aplatir la base” si besoin.', 'holds-configurator'); ?>
+    </p>
 </div>

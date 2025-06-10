@@ -4,9 +4,16 @@
  * Description: Configurateur 3D interactif basé sur Three.js pour prises d'escalade personnalisées.
  * Version: 1.0
  * Author: Loïc Blayo
+ * Text Domain: holds-configurator
+ * Domain Path: /languages
  */
 
-defined('ABSPATH') or die('No direct access');
+defined('ABSPATH') or die( __( 'No direct access', 'holds-configurator' ) );
+
+function holds_configurator_load_textdomain() {
+    load_plugin_textdomain( 'holds-configurator', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+}
+add_action( 'init', 'holds_configurator_load_textdomain' );
 
 function holds_configurator_enqueue_scripts() {
     // Utilisation de la version r147 de Three.js
