@@ -17,17 +17,41 @@ add_action( 'init', 'holds_configurator_load_textdomain' );
 
 function holds_configurator_enqueue_scripts() {
     // Utilisation de la version r147 de Three.js
-    wp_enqueue_script('three-js', 'https://cdn.jsdelivr.net/npm/three@0.147.0/build/three.min.js', [], null, true);
+    wp_enqueue_script(
+        'three-js',
+        plugin_dir_url(__FILE__) . 'assets/js/three.min.js',
+        [],
+        '0.147.0',
+        true
+    );
 
     // Add-ons locaux version r147 (fichiers dans assets/js/)
-    wp_enqueue_script('orbit-controls', plugin_dir_url(__FILE__) . 'assets/js/OrbitControls.js', ['three-js'], null, true);
-    wp_enqueue_script('stl-exporter', plugin_dir_url(__FILE__) . 'assets/js/STLExporter.js', ['three-js'], null, true);
-    wp_enqueue_script('simplex-noise', 'https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js', [], null, true);
+    wp_enqueue_script(
+        'orbit-controls',
+        plugin_dir_url(__FILE__) . 'assets/js/OrbitControls.js',
+        ['three-js'],
+        '0.147.0',
+        true
+    );
+    wp_enqueue_script(
+        'stl-exporter',
+        plugin_dir_url(__FILE__) . 'assets/js/STLExporter.js',
+        ['three-js'],
+        '0.147.0',
+        true
+    );
+    wp_enqueue_script(
+        'simplex-noise',
+        plugin_dir_url(__FILE__) . 'assets/js/simplex-noise.min.js',
+        [],
+        '2.4.0',
+        true
+    );
     wp_enqueue_script(
         'holds-configurator',
         plugin_dir_url(__FILE__) . 'assets/js/configurator.js',
         ['three-js', 'stl-exporter', 'orbit-controls'],
-        null,
+        '1.0',
         true
     );
 }
