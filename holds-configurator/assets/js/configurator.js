@@ -372,14 +372,31 @@ document.addEventListener('DOMContentLoaded', () => {
     renderer.setSize(canvas.clientWidth, 400, false);
   });
 
+  async function sendSTLToServer(stlString) {
+    const response = await fetch(holdsConf.ajax_url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+      },
+      body: new URLSearchParams({
+        action: 'save_stl',
+        nonce: holdsConf.nonce,
+        stl: stlString
+      })
+    });
+    return response.json();
+  }
+
   document.getElementById('export-btn').addEventListener('click', () => {
     const exporter = new THREE.STLExporter();
     const stlString = exporter.parse(mesh);
-    const blob = new Blob([stlString], { type: 'text/plain' });
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = 'custom-hold.stl';
-    a.click();
+    sendSTLToServer(stlString).then(result => {
+      if (result.success) {
+        alert('STL saved at ' + result.data.url);
+      } else {
+        alert('Error saving STL');
+      }
+    });
   });
 
   updateParamControls();
